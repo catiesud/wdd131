@@ -1,0 +1,19 @@
+/* minimal reset */
+* {
+
+  box-sizing: border-box;
+}
+
+font {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  
+}
+
+h1 {
+  font-weight: 100;
+  
+}
+footer {
+  font-family: "Playfair", serif;
+}
