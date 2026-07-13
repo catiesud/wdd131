@@ -1,45 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta name="description" content="WDD 131 – Fundamentos da Web Dinâmica - Catiana Guillaume">
- <meta name="author" content="Catiana Guillaume">
- <title>WDD 131 – Fundamentos da Web Dinâmica - Catiana Guillaume</title>
-
- <link rel="preconnect" href="https://fonts.googleapis.com">
-    
- <link rel="stylesheet" href="estilos/base.css">
- <link rel="stylesheet" href="estilos/layout.css">
- <layout-basico class="html"></layout-basico>
-
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
-    
-<title>WDD 131 – Fundamentos da Web Dinâmica - Catiana Guillaume</title>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131: Fundamentos da Web Dinamica - Catiana Guillaume </title>
+     <!-- Vinculando o CSS externo -->
+    <link rel="stylesheet" href="estilos/base.css">
+    <script>
+        // Script para atualizar o ano atual e a última modificação
+        document.getElementById("anoatual").textContent = new Date().getFullYear();
+        document.getElementById("ultimamodificacao").textContent = document.lastModified;
+    </script>
+    <script src="scripts/obterdata.js"></script>
 </head>
-<body>
-    <header>
-        <nav>
-            <a href="#">Pagina Inicial</a>
-            <a href="#">Sobre Mim</a>
-            <a href="#">contatos</a>
-            <a href="https://www.linkedin.com/in/catiana-guillaume-9a9b27391/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://byupw.instructure.com/" target="_blank" rel="noopener noreferrer">Canvas</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures?lang=por" target="_blank" rel="noopener noreferrer">Scriptures</a>
-            <a href="#"> Projeto Final</a> 
-        </nav>
-    </header>
+    <body>
+        <header>
+            <h1>WDD 131: Fundamentos da Web Dinamica - Catiana Guillaume</h1>
+    
+    <nav>
+        <a href="https://www.linkedin.com/in/catiana-guillaume-9a9b27391/" target="_blank">LinkedIn</a>
+        <a href="#">Sobre Mim</a>
+        <a href="#">Escritura</a>
+        <a href="#">Contatos</a>
+    </nav>
+</header>
+
     <main>
-        <p>Catiana Guillaume</p>
-        <img src="imagens/catianaperfildinamica - Copia.jpeg" alt="Foto de Catiana Guillaume" width="200" height="200">
-        <section>card</section>
-        <section>card</section>
-    </main>
-    <footer>
-        <p><span id="anoatual"> Catiana Guillaume - São Paulo, SP - Brasil</span></p>
+        <section class="sobre-mim">
+            <h2>Sobre Mim</h2>
+            <img src="imagens/catianaperfildinamica.jpeg" alt="Foto de Catiana Guillaume" width="200" height="200">
+            <p>Meu nome é Catiana Guillaume , nasci no Haiti e eu vivo no Brasil há alguns anos. Atualmente eu sou estagiaria na area da engenharia civil. Eu sou estudante de desenvolvimento de software e estudante da engenharia civil. Sou formada em administração com enfâse em comercio exterior </p>
+        
+        </section>
+
+        <section class="localizacao">
+            <h2>São Paulo, Brasil</h2>
+            <img src="imagens/bandeira de sao paulo.png" alt="Foto da bandeira de São Paulo" width="200">
+            <p>São Paulo é a maior cidade do Brasil e um dos principais centros econômicos e culturais do país, conhecida por sua diversidade cultural e vibrante, a cidade tem uma rica história e uma vida noturna agitada e animada. A diersidade culinaria é uma das características mais marcantes da cidade.</p>
+        </section>
+        <section class="recursos">
+            <h2>Recursos</h2>
+            <ul>
+              <li><a href="#">Comunidade Dev.to</a></li>
+              <li><a href="#">Revista Smashing</a></li>
+              <li><a href="#">CSS Tricks</a></li>
+              <li><a href="#">W3 Schools</a></li>
+              <li><a href="#">Udemy</a></li>
+                
+            </ul>
+       </section>
+       <footer>
+        <p>&copy; 2026 Catiana Guillaume. São Paulo, Brasil. Todos os direitos reservados.</p>
+        <p><span id="anoatual"></span></p>
         <p>ultimaModificacao: <span id="ultimamodificacao"></span></p>
-    </footer>
+        </footer>
+    </main>
+    
 </body>
 </html>
