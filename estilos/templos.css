@@ -1,6 +1,11 @@
+
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
 }
+
 
 header h2, main h1 {
   font-family: 'Merriweather', serif;
