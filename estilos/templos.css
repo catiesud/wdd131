@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header h2, main h1 {
+  font-family: 'Merriweather', serif;
+}
+
 
 :root {
   --cor-header: #6a1b9a;   /* Roxo */
