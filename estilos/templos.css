@@ -1,28 +1,8 @@
-
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: var(--cor-fundo);
-  color: var(--cor-texto);
-  line-height: 1.6;
-}
-
-
-header h2, main h1 {
-  font-family: 'Merriweather', serif;
-}
-
-
 :root {
-  --cor-header: #6a1b9a;   /* Roxo */
-  --cor-hover: #7b304f;    /* Roxo mais claro */
+  --cor-primaria: #6a1b9a;
+  --cor-hover: #9c27b0;
   --cor-fundo: #f4f4f4;
-  --cor-texto: #333;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  --cor-texto: #333333;
 }
 
 body {
@@ -34,7 +14,7 @@ body {
 
 /* Header */
 header {
-  background-color: var(--cor-header);
+  background-color: var(--cor-primaria);
   color: white;
   padding: 1rem;
   text-align: center;
@@ -48,19 +28,17 @@ header h2 {
 /* Navegação */
 nav ul {
   list-style: none;
-  display: none; /* escondido no mobile */
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-nav ul.ativo {
   display: flex;
+  flex-wrap: wrap;       /* permite quebrar linha automaticamente */
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0;
 }
 
 nav a {
   text-decoration: none;
   color: white;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   border-radius: 4px;
   transition: background-color 0.3s ease;
 }
@@ -69,24 +47,13 @@ nav a:hover {
   background-color: var(--cor-hover);
 }
 
-/* Botão hambúrguer */
-.hamburguer {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 2rem;
-  cursor: pointer;
-  display: block;
-  margin: 0.5rem auto;
-}
-
 /* Main */
 main {
-  max-width: 90%;
+  max-width: 1200px;
   margin: 1rem auto;
   text-align: center;
   display: grid;
-  grid-template-columns: 1fr; /* Mobile: uma coluna */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
   gap: 1rem;
 }
 
@@ -115,13 +82,13 @@ figcaption {
 
 /* Footer */
 footer {
-  background-color: var(--cor-header);
+  background-color: var(--cor-primaria);
   color: white;
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
-  
 }
+
 
 
 div {
