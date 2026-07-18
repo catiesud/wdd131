@@ -1,61 +1,116 @@
-body {
-  font-family: 'Roboto', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+
+:root {
+  --cor-header: #6a1b9a;   /* Roxo */
+  --cor-hover: #7b304f;    /* Roxo mais claro */
+  --cor-fundo: #f4f4f4;
+  --cor-texto: #333;
+}
+
+* {
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
-  color: #333;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+}
+
+/* Header */
 header {
-  background-color: #4a6fa5;
+  background-color: var(--cor-header);
   color: white;
   padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
 }
 
-nav {
-  display: none;
+header h2 {
+  font-family: 'Merriweather', serif;
+  margin-bottom: 0.5rem;
+}
+
+/* Navegação */
+nav ul {
+  list-style: none;
+  display: none; /* escondido no mobile */
   flex-direction: column;
+  gap: 0.5rem;
+}
+
+nav ul.ativo {
+  display: flex;
 }
 
 nav a {
-  color: white;
   text-decoration: none;
+  color: white;
   padding: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-  background-color: #36577a;
+  background-color: var(--cor-hover);
 }
 
+/* Botão hambúrguer */
+.hamburguer {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  display: block;
+  margin: 0.5rem auto;
+}
+
+/* Main */
 main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 1rem;
-}
-
-.container {
+  max-width: 90%;
+  margin: 1rem auto;
+  text-align: center;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr; /* Mobile: uma coluna */
   gap: 1rem;
 }
 
+main h1 {
+  margin-bottom: 1rem;
+  font-family: 'Merriweather', serif;
+}
+
+/* Figuras */
 figure {
-  margin: 0;
-  text-align: center;
-}
-
-img {
-  width: 100%;
-  height: auto;
+  background: white;
+  padding: 0.5rem;
   border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+figure img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+/* Footer */
 footer {
-  background-color: #4a6fa5;
+  background-color: var(--cor-header);
   color: white;
   text-align: center;
   padding: 1rem;
+  margin-top: 2rem;
 }
+
+div {
+  border: 10px solid var(--cor-header);
+}
+
