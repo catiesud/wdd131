@@ -1,0 +1,17 @@
+@media (max-width: 600px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  .clima h2::after {
+    content: "";
+  }
+
+  .icone-clima {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url("../img/icone-clima.svg") no-repeat center;
+    background-size: contain;
+  }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local</title>
+     <meta name="description" content="Página sobre templos da igreja de Jesus Cristo dos SAntos dos Ultimos Dias, templos localizado no Brasil a fora ">
+     <meta name="author" content="Catiana Guillaume">
+
+  <!-- Variantes de CSS -->
+  <link rel="stylesheet" href="estilos/local.css">
+  <link rel="stylesheet" href="estilos/local-grande.css">
+</head>
+<body>
+  <header>
+    <h1>Bem-vindo a São Paulo</h1>
+  </header>
+
+  <main>
+    <section class="principal">
+      <picture>
+        <source srcset="imagens/paulista-sp.webp" media="(min-width: 150px)">
+        <source srcset="imagens/paulista-sp.webp" media="(min-width: 100px)">
+        <img src="imagens/paulista-sp.webp" alt="Imagem principal do local">
+      </picture>
+    </section>
+
+    <section class="clima">
+      <h2>Clima <span class="icone-clima"></span></h2>
+      <p>Temperatura: <span id="temp">8 °C</span></p>
+      <p>Vento: <span id="vento">10 km/h</span></p>
+      <p>Sensação térmica: <span id="sensacao">...</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;2026 local, Catiana Guillaume <span id="ano"></span> | Última modificação: <span id="modificado"></span></p>
+  </footer>
+
+  <script src="js/local.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+:root {
+  --cor-primaria: #006400; /* exemplo: verde Brasil */
+  --cor-secundaria: #ffdf00; /* amarelo da bandeira */
+  --cor-contraste: #0000cd; /* azul */
+  --fonte-principal: 'Arial', sans-serif;
+}
+
+body {
+  font-family: var(--fonte-principal);
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header, footer {
+  background-color: var(--cor-primaria);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+h1, h2 {
+  margin: 0.5rem 0;
+}
+
+.principal img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.clima {
+  padding: 1rem;
+  background-color: var(--cor-secundaria);
+  color: #000;
+}
+
+/* Pseudoelemento para ícone de clima na visualização ampla */
+.clima h2::after {
+  content: " ⛅";
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}
