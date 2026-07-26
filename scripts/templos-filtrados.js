@@ -57,5 +57,33 @@ const templos = [
     urlDaImagem:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
-  // Adicione mais objetos de templos aqui...
+  
+  {
+     nomeDoTemplo: "São Paulo",
+    localizacao: "São Paulo, Brasil",
+    consagracao: "1978,  30 de outubro",
+    area: 59.246,
+    urlDaImagem:
+    "https://churchofjesuschristtemples.org/assets/img/temples/_temp/017-S%C3%A3o-Paulo-Brazil-Temple.jpg"
+
+  },
+
+  {
+      nomeDoTemplo: "Salt Lake",
+    localizacao: "Salt Lake City, Utah, Estados Unidos",
+    consagracao: "1893, 6 de abril",
+    area: 116642,
+    urlDaImagem:
+    "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-15669-main.jpg"
+  },
+
+  {
+     nomeDoTemplo: "Recife",
+    localizacao: "Recife,Brasil",
+    consagracao: "200, 15 de dezembro",
+    area: 25.000,
+    urlDaImagem:
+    "https://churchofjesuschristtemples.org/assets/img/temples/recife-brazil-temple/recife-brazil-temple-36778-icon.jpg"
+  }
+
 ];

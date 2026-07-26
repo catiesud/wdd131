@@ -52,3 +52,18 @@ nav a {
   width: 100%;
   border-radius: 6px;
 }
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background: #ffffff;
+  color: #004080;
+  border-radius: 4px;
+}
+
