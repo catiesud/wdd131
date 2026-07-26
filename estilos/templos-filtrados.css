@@ -67,3 +67,58 @@ nav a:hover {
   border-radius: 4px;
 }
 
+/* Layout padrão já definido acima */
+
+/* 🔹 Media Query para telas menores que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .grid-templos {
+    grid-template-columns: 1fr; /* apenas uma coluna */
+  }
+
+  .templo-card {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+}
+
+/* 🔹 Media Query para telas muito pequenas (até 480px) */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  nav a {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  transition: background 0.3s, color 0.3s;
+}
+
+/*  pseudoclass hover  */
+nav a:hover {
+  background-color: #ffffff;
+  color: #004080;
+  border-radius: 4px;
+}
+
+
+  .templo-card img {
+    max-height: 180px;
+    object-fit: cover;
+  }
+}
+
