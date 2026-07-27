@@ -1,3 +1,64 @@
+let d=new data();
+
+
+import { templos } from "./templos-dados.js";
+
+function criarCartao(templo) {
+  const card = document.createElement("div");
+  card.classList.add("templo-card");
+
+  card.innerHTML = `
+    <h2>${templo.nomeDoTemplo}</h2>
+    <p><strong>Localização:</strong> ${templo.localizacao}</p>
+    <p><strong>Consagração:</strong> ${templo.consagracao}</p>
+    <p><strong>Área:</strong> ${templo.area} pés²</p>
+    <img src="${templo.urlDaImagem}" alt="${templo.nomeDoTemplo}" loading="lazy">
+  `;
+  return card;
+}
+
+function exibirTemplos(lista) {
+  const container = document.getElementById("templos-container");
+  container.innerHTML = "";
+  lista.forEach(t => container.appendChild(criarCartao(t)));
+}
+
+// Exibe todos inicialmente
+exibirTemplos(templos);
+
+// 🔹 Filtros do menu
+document.getElementById("menu-antigos").addEventListener("click", () => {
+  exibirTemplos(
+    templos.filter(t => parseInt(t.consagracao.split(",")[0]) < 1900)
+  );
+});
+
+document.getElementById("menu-novos").addEventListener("click", () => {
+  exibirTemplos(
+    templos.filter(t => parseInt(t.consagracao.split(",")[0]) > 2000)
+  );
+});
+
+document.getElementById("menu-grandes").addEventListener("click", () => {
+  exibirTemplos(
+    templos.filter(t => t.area > 90000)
+  );
+});
+
+document.getElementById("menu-pequenos").addEventListener("click", () => {
+  exibirTemplos(
+    templos.filter(t => t.area < 10000)
+  );
+});
+
+document.getElementById("menu-home").addEventListener("click", () => {
+  exibirTemplos(templos);
+});
+
+// 🔹 Footer dinâmico
+document.getElementById("ano-direitos").textContent = new Date().getFullYear();
+document.getElementById("ultima-modificacao").textContent = document.lastModified;
+
 
 
 const templos = [
@@ -62,7 +123,7 @@ const templos = [
      nomeDoTemplo: "São Paulo",
     localizacao: "São Paulo, Brasil",
     consagracao: "1978,  30 de outubro",
-    area: 59.246,
+    area: 59246,
     urlDaImagem:
     "https://churchofjesuschristtemples.org/assets/img/temples/_temp/017-S%C3%A3o-Paulo-Brazil-Temple.jpg"
 
@@ -81,9 +142,11 @@ const templos = [
      nomeDoTemplo: "Recife",
     localizacao: "Recife,Brasil",
     consagracao: "200, 15 de dezembro",
-    area: 25.000,
+    area: 25000,
     urlDaImagem:
     "https://churchofjesuschristtemples.org/assets/img/temples/recife-brazil-temple/recife-brazil-temple-36778-icon.jpg"
   }
 
 ];
+
+
