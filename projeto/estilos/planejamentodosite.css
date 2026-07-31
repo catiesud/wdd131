@@ -37,6 +37,10 @@ nav {
     padding: 10px;
 }
 
+h1 {
+    background-color: #FFD700;
+    color: #333;
+}
 nav a {
     color: white;
     text-decoration: none;
