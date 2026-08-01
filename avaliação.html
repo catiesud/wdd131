@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmação da Avaliação</title>
+</head>
+<body>
+  <h1>Obrigado pela sua avaliação!</h1>
+  <p>Seu feedback foi registrado com sucesso.</p>
+
+  <div id="contador"></div>
+
+  <script>
+    // contador de avaliações usando localStorage
+    let contador = localStorage.getItem("avaliacoes") || 0;
+    contador++;
+    localStorage.setItem("avaliacoes", contador);
+    document.getElementById("contador").textContent = 
+      "Número de avaliações concluídas: " + contador;
+  </script>
+</body>
+</html>

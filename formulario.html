@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avaliação de Produto</title>
+  <link rel="stylesheet" href="estilos/formulario.css">
+  <link rel="stylesheet" href="avaliação.html">
+ 
+</head>
+<body>
+  <header>
+    <h1>Avaliação do Produto</h1>
+  </header>
+
+  <main>
+    <form method="get" action="avaliacao.html">
+      <!-- Nome do Produto -->
+      <label for="produto">Nome do Produto:</label>
+      <select id="produto" name="produto" required>
+        <option value="" disabled selected>Selecione um Produto...</option>
+        <!-- opções preenchidas dinamicamente via JS -->
+      </select>
+
+      <!-- Classificação Geral -->
+      <fieldset>
+        <legend>Classificação Geral:</legend>
+        <label><input type="radio" id="estrela1" name="classificacao" value="1" required> ⭐☆</label>
+        <label><input type="radio" id="estrela2" name="classificacao" value="2"> ☆☆</label>
+        <label><input type="radio" id="estrela3" name="classificacao" value="3"> ☆☆☆</label>
+        <label><input type="radio" id="estrela4" name="classificacao" value="4"> ☆☆☆☆</label>
+        <label><input type="radio" id="estrela5" name="classificacao" value="5"> ☆☆☆☆☆</label>
+      </fieldset>
+
+      <!-- Data de Instalação -->
+      <label for="data">Data de Instalação:</label>
+      <input type="date" id="data" name="data" required>
+
+      <!-- Recursos Úteis -->
+      <fieldset>
+        <legend>Quais recursos você achou úteis?</legend>
+        <label><input type="checkbox" id="durabilidade" name="recursos" value="Durabilidade"> Durabilidade</label>
+        <label><input type="checkbox" id="facilidade" name="recursos" value="Facilidade de Uso"> Facilidade de Uso</label>
+        <label><input type="checkbox" id="desempenho" name="recursos" value="Desempenho"> Desempenho</label>
+        <label><input type="checkbox" id="design" name="recursos" value="Design"> Design</label>
+      </fieldset>
+
+      <!-- Avaliação Escrita -->
+      <label for="avaliacao">Avaliação Escrita:</label>
+      <textarea id="avaliacao" name="avaliacao"></textarea>
+
+      <!-- Nome de Usuário -->
+      <label for="usuario">Seu Nome:</label>
+      <input type="text" id="usuario" name="usuario">
+
+      <!-- Botão de envio -->
+      <input type="submit" value="Publicar Avaliação">
+    </form>
+  </main>
+
+  <footer>
+    <p>©2026 🌸 Catiana Guillaume 🌸 - São Paulo</p>
+  </footer>
+
+  <script src="scripts/formulario.js"></script>
+</body>
+</html>
