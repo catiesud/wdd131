@@ -3,9 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description"content="pagina para avaliar o serviço e produto, que o cliente contrato na empresa. ">
+    <meta name="author" content="Catiana Guillaume">
+ 
   <title>Avaliação de Produto</title>
   <link rel="stylesheet" href="estilos/formulario.css">
-  <link rel="stylesheet" href="avaliação.html">
+  <link rel="stylesheet" href="avaliacao.html">
+  <!-- Referência correta ao JS -->
+  <script src="scripts/formulario.js" defer></script>
+
  
 </head>
 <body>
@@ -22,14 +28,13 @@
         <!-- opções preenchidas dinamicamente via JS -->
       </select>
 
-      <!-- Classificação Geral -->
-      <fieldset>
+     <fieldset>
         <legend>Classificação Geral:</legend>
-        <label><input type="radio" id="estrela1" name="classificacao" value="1" required> ⭐☆</label>
-        <label><input type="radio" id="estrela2" name="classificacao" value="2"> ☆☆</label>
-        <label><input type="radio" id="estrela3" name="classificacao" value="3"> ☆☆☆</label>
-        <label><input type="radio" id="estrela4" name="classificacao" value="4"> ☆☆☆☆</label>
-        <label><input type="radio" id="estrela5" name="classificacao" value="5"> ☆☆☆☆☆</label>
+        <label><input type="radio" id="estrela1" name="classificacao" value="1" required> ⭐</label>
+        <label><input type="radio" id="estrela2" name="classificacao" value="2"> ⭐⭐</label>
+        <label><input type="radio" id="estrela3" name="classificacao" value="3"> ⭐⭐⭐</label>
+        <label><input type="radio" id="estrela4" name="classificacao" value="4"> ⭐⭐⭐⭐</label>
+        <label><input type="radio" id="estrela5" name="classificacao" value="5"> ⭐⭐⭐⭐⭐</label>
       </fieldset>
 
       <!-- Data de Instalação -->
@@ -45,6 +50,9 @@
         <label><input type="checkbox" id="design" name="recursos" value="Design"> Design</label>
       </fieldset>
 
+
+
+      
       <!-- Avaliação Escrita -->
       <label for="avaliacao">Avaliação Escrita:</label>
       <textarea id="avaliacao" name="avaliacao"></textarea>
