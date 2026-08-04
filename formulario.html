@@ -6,7 +6,7 @@
    <meta name="description"content="pagina para avaliar o serviço e produto, que o cliente contrato na empresa. ">
     <meta name="author" content="Catiana Guillaume">
  
-  <title>Avaliação de Produto</title>
+  <title>Avaliação de serviço</title>
   <link rel="stylesheet" href="estilos/formulario.css">
   <link rel="stylesheet" href="avaliacao.html">
   <!-- Referência correta ao JS -->
@@ -16,16 +16,19 @@
 </head>
 <body>
   <header>
-    <h1>Avaliação do Produto</h1>
+    <h1>Avaliação do Serviço</h1>
   </header>
 
   <main>
     <form method="get" action="avaliacao.html">
-      <!-- Nome do Produto -->
-      <label for="produto">Nome do Produto:</label>
+      <!-- Nome do Serviço -->
+
+      <label for="produto">produto:</label>
+
+       <select >
+      <label for="produto">pintura Residencial:</label>
       <select id="produto" name="produto" required>
-        <option value="" disabled selected>Selecione um Produto...</option>
-        <!-- opções preenchidas dinamicamente via JS -->
+        <option value="" disabled selected>Selecione um Serviço...</option>
       </select>
 
      <fieldset>
@@ -42,6 +45,8 @@
       <input type="date" id="data" name="data" required>
 
       <!-- Recursos Úteis -->
+
+
       <fieldset>
         <legend>Quais recursos você achou úteis?</legend>
         <label><input type="checkbox" id="durabilidade" name="recursos" value="Durabilidade"> Durabilidade</label>
@@ -70,6 +75,6 @@
     <p>©2026 🌸 Catiana Guillaume 🌸 - São Paulo</p>
   </footer>
 
-  <script src="scripts/formulario.js"></script>
+  
 </body>
 </html>
