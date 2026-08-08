@@ -1,3 +1,22 @@
+//
+const botaoTema = document.getElementById("tema");
+botaoTema.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+  localStorage.setItem("tema", document.body.classList.contains("dark") ? "dark" : "light");
+});
+
+//Array de serviço
+const servicos = ["Pintura interna", "Pintura externa", "Textura decorativa"];
+servicos.forEach(s => {
+  document.querySelector("#lista-servicos").innerHTML += `<li>${s}</li>`;
+});
+
+//hora e dia
+const cliente = "Maria";
+console.log(`Bem-vinda, ${cliente}! Sua casa ficará incrível.`);
+
+
+
 // Exemplo de interatividade com DOM, eventos e localStorage
 
 // Botão de orçamento na Home
