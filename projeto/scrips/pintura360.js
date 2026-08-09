@@ -48,3 +48,31 @@ if (contatoForm) {
 // Exemplo de uso de arrays e métodos
 const servicos = ["Residencial", "Comercial", "Fachadas"];
 servicos.forEach(s => console.log(`Serviço disponível: ${s}`));
+
+// Recuperar tema salvo ao carregar a página
+const temaSalvo = localStorage.getItem("tema");
+if (temaSalvo === "dark") {
+  document.body.classList.add("dark");
+}
+
+// Botão de alternar tema
+const botaoTema = document.getElementById("tema");
+botaoTema.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+  localStorage.setItem(
+    "tema",
+    document.body.classList.contains("dark") ? "dark" : "light"
+  );
+});
+
+
+const ultimoContato = JSON.parse(localStorage.getItem("ultimoContato"));
+if (ultimoContato) {
+  console.log("Último contato:", ultimoContato.nome, ultimoContato.email, ultimoContato.mensagem);
+}
+
+// Recuperar tema salvo
+const temaSalvo = localStorage.getItem("tema");
+if (temaSalvo === "dark") {
+  document.body.classList.add("dark");
+}
