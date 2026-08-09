@@ -322,3 +322,127 @@ footer .redes-sociais a:hover {
   transform: scale(1.2);
 }
 
+/* Estilo padrão (desktop) */
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+/* Tema escuro */
+body.dark {
+  background: #222;
+  color: #eee;
+}
+
+/* Media query para telas menores (celulares) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  #lista-servicos {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  #contatoForm {
+    width: 100%;
+  }
+}
+
+/* Media query para telas muito pequenas (até 480px) */
+@media (max-width: 480px) {
+  header, footer {
+    text-align: center;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+.contato-container iframe {
+    flex: 1;
+    /* ocupa metade */
+    min-height: 300px;
+
+}
+.contato-container {
+    display: flex;
+    /* coloca lado a lado */
+    justify-content: space-between;
+    gap: 20px;
+    /* espaço entre mapa e formulário */
+    margin-top: 20px;
+}
+
+.contato-container iframe,
+.contato-container .formulario {
+    flex: 1;
+    min-height: 300px;
+    border: 2px solid #4CAF50;
+}
+
+
+
+
+
+/* Seção de avaliações */
+.avaliacoes {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.avaliacoes h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+/* Layout em colunas */
+.lista-avaliacoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Cartões individuais */
+.avaliacao {
+  flex: 1 1 280px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.avaliacao:hover {
+  transform: translateY(-5px);
+}
+
+/* Nome do cliente */
+.avaliacao h3 {
+  margin: 0;
+  color: #444;
+  font-size: 18px;
+}
+
+/* Estrelas */
+.estrelas {
+  color: #f5a623; /* dourado */
+  font-size: 20px;
+  margin: 8px 0;
+}
+
+/* Texto */
+.avaliacao p {
+  color: #555;
+  line-height: 1.4;
+}
