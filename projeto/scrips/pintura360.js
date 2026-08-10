@@ -17,7 +17,7 @@ console.log(`Bem-vinda, ${cliente}! Sua casa ficará incrível.`);
 
 
 
-// Exemplo de interatividade com DOM, eventos e localStorage
+//  eventos e localStorage
 
 // Botão de orçamento na Home
 const orcamentoBtn = document.getElementById('orcamentoBtn');
